@@ -31,7 +31,7 @@ app.post('/openWord',function(req,res,next)
   var jsDavUrl=req.body.jsDavUrl;
   var wordPath=req.body.wordPath;
   var docPath=req.body.docPath;
-  //console.log(req.body);
+  console.log(req.body);
   var exec = require('child_process').exec;
   var command=wordPath+"\""+ " \""+jsDavUrl+docPath;
   var cmd = "\""+command+"\"";
